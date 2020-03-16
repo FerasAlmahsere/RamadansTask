@@ -138,5 +138,7 @@ class ViewController: UIViewController {
         self.userFollowers = []
         self.nextPage = 1
         self.userName = ""
+        viewModel.followersObs.accept([])
+        viewModel.userInfoObs.accept(nil)
     }
 }
